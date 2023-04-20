@@ -13,8 +13,8 @@ Calculadora com as quatro operações básicas. Este projeto possui a opção da
 
 <p align="center">
 
-  ![Calculadora-light](https://user-images.githubusercontent.com/80927699/233503106-8c6c2004-c436-413c-b627-f8c20573ee00.png)&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-  ![Calculadora-dark](https://user-images.githubusercontent.com/80927699/233503152-d5f72ad0-4119-461c-b610-bfe70e6798f7.png)
+  ![Calculadora-light-CORTADA](https://user-images.githubusercontent.com/80927699/233503652-42e8397c-f30a-45c7-96f1-3532265732f0.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  ![Calculadora-dark-CORTADA](https://user-images.githubusercontent.com/80927699/233503691-4f309a77-600f-47ba-bd52-01cd92fe9c86.png)
 
 </p>
 
