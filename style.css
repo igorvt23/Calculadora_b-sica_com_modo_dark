@@ -1,0 +1,138 @@
+*{
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--color-bg);
+}
+:root{
+    --color-bg-calculator: #edf1f4;
+    --color-bg: #edf1f4;
+    --color-shadow: #0000001a;
+    --color-light: #fffb;
+    --color-display: #5166d6;
+    --color-buttons: #666;
+    --color-buttons_2: #fffb;
+    --color-buttons-border: #edf1f4;
+    --color-clear: #f44336;
+    --color-plus: #31a935;
+    --color-equal: #2196f3;
+    --switch-bg-url: url(./assets/img-sun.svg);
+    --social-link-hover: rgba(0, 0, 0, 0.1);
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.05);
+}
+.dark{
+    --color-bg-calculator: #33393e;
+    --color-bg: #282c2f;
+    --color-shadow: rgba(0,0,0,0.25);
+    --color-light: rgba(255,255,255, 0.1);
+    --color-display: #eee;
+    --color-buttons: #eee;
+    --color-buttons_2: #eee;
+    --color-buttons-border: #333;
+    
+    --color-clear: #f44336;
+    --color-plus: #31a935;
+    --color-equal: #2196f3;
+    --switch-bg-url: url(./assets/img-moon.svg);
+    --social-link-hover: rgba(255, 255, 255, 0.2);
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.1);
+}
+
+.container{
+    background: var(--color-bg-calculator);
+    position: relative;
+    width: 340px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 20px var(--color-shadow), -15px -15px 20px var(--color-light);
+}
+.container .buttonscalculator{
+    position: relative;
+    display: grid;
+}
+.container .buttonscalculator #value{
+    position: relative;
+    grid-column: span 4;
+    user-select: none;
+    overflow: none;
+    width: 100%;
+    text-align: end;
+    color: var(--color-display);
+    height: 100px;
+    line-height: 100px;
+    box-shadow: inset 5px 5px 10px var(--color-shadow),
+    inset -5px -5px 20px var(--color-light);
+    border-radius: 10px;
+    margin-bottom: 12px;
+    padding: 0 20px;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.container .buttonscalculator span {
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    user-select: none;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: var(--color-buttons);
+    border: 2px solid var(--color-buttons-border);
+    box-shadow: 5px 5px 10px var(--color-shadow), -5px -5px 10px var(--color-light);
+    border-radius: 10px;
+}
+.container .buttonscalculator span:active{
+    box-shadow: inset 5px 5px 10px var(--color-shadow), inset -5px -5px 10px var(--color-light);
+}
+
+.container .buttonscalculator span#clear {
+    grid-column: span 2;
+    background: var(--color-clear);
+    color: var(--color-buttons_2);
+    border: 2px solid var(--color-buttons-border); 
+}
+.container .buttonscalculator span#plus {
+    grid-row: span 2;
+    background: var(--color-plus);
+    color: var(--color-buttons_2);
+    border: 2px solid var(--color-buttons-border); 
+}
+.container .buttonscalculator span#equal {
+    grid-row: span 2;
+    background: var(--color-equal);
+    color: var(--color-buttons_2);
+    border: 2px solid var(--color-buttons-border); 
+}
+.container .buttonscalculator span#clear,.container .buttonscalculator span#plus,.container .buttonscalculator span#equal{
+box-shadow: 5px 5px 10px var(--color-shadow), -5px -5px 10px #fff, inset 5px 5px 10px var(--color-shadow);
+}
+
+.toggleBtn{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background: white var(--switch-bg-url) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px var(--color-shadow), -5px -5px 10px var(--color-light);
+}
+
+.toggleBtn:hover{
+    outline: 5px solid var(--social-link-hover)
+}
